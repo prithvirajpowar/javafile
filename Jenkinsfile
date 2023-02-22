@@ -2,9 +2,9 @@ pipeline {
   agent any
 
   stages {
-    stage('Build') {
+    stage('Compile') {
       steps {
-        sh 'python hello.py'
+        sh '/usr/lib/python hello.py'
       }
     }
   }
